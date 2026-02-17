@@ -19,5 +19,9 @@
 
 - Step 7: Risk scoring module (risk-scoring.js utility with calculateRiskScore + getTrustGrade + getTimeDecayWeight, risk.js derived store with enrichedAgents, AgentPanel + Header wired to enrichedAgents, shield score = 100 - avg risk)
 
+- Step 8: Radar canvas (Radar.svelte — canvas with concentric rings, sweep arm, agent dots positioned by riskScore, glow, AEGIS center label, responsive via bind:clientWidth, 60fps requestAnimationFrame; ShieldTab.svelte — two-column layout: Radar 60% left, AgentPanel 40% right, stacks vertically on <768px)
+
+- Step 9: Activity feed (FeedFilters.svelte — agent dropdown + severity pills + type pills with $bindable; ActivityFeed.svelte — unified file+network event list, severity classification, newest-first, 200 event cap, severity dot + time + agent + type badge + path + reason + severity badge; ActivityTab.svelte — filters bar on top, scrollable feed below)
+
 ## Next
-- Step 8 (TBD)
+- Step 10 (TBD)
