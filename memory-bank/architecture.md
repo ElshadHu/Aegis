@@ -37,8 +37,16 @@
 - src/renderer/lib/components/ActivityFeed.svelte — scrollable event list: unified file events + network connections, severity classification (critical/_denied, high/sensitive, medium/deleted, low/normal), newest-first, 200 event cap
 - src/renderer/lib/components/NetworkPanel.svelte — network connections list: agent/domain/port/state/classification badge, filter by agent + classification pills, sort by agent/domain/class, 3-tier classify (safe/unknown/flagged)
 - src/renderer/lib/components/ActivityTab.svelte — Feed/Network toggle pills, shows FeedFilters+ActivityFeed or NetworkPanel
-- src/renderer/lib/components/RulesTab.svelte — placeholder
-- src/renderer/lib/components/ReportsTab.svelte — placeholder
+- src/renderer/lib/components/ProtectionPresets.svelte — 4 preset pill buttons (Paranoid/Strict/Balanced/Developer), active highlight, emits onApply with preset config
+- src/renderer/lib/components/PermissionsGrid.svelte — 6 categories × 3 states grid, agent selector from enrichedAgents, tri-state buttons, auto-save via IPC
+- src/renderer/lib/components/RulesTab.svelte — sub-toggle (Permissions | Agent Database), composed: ProtectionPresets + PermissionsGrid or AgentDatabaseCrud
+- src/renderer/lib/components/AgentDatabase.svelte — agent database table: 88 agents, search/filter input, category filter pills (9 categories), sortable columns (Name/Category/Detection/Risk), scrollable body with fixed header, action buttons for custom agents
+- src/renderer/lib/components/AgentDatabaseCrud.svelte — CRUD wrapper: Add Custom Agent modal form (name/process/category/risk/description), edit/delete for custom agents, import/export via IPC, delete confirmation dialog
+- src/renderer/lib/components/Reports.svelte — stats summary cards (Total Events/Agents Detected/Avg Risk Score/Uptime), top 10 most active agents table (Name/Events/Risk Score/Grade), export buttons (JSON/CSV/HTML Report)
+- src/renderer/lib/components/AuditLog.svelte — audit stats cards (Total Entries/Log Size/Date Range) via getAuditStats IPC, View Logs Directory + Export Full Audit buttons
+- src/renderer/lib/components/ThreatAnalysis.svelte — AI threat analysis UI: session/agent radio toggle, agent dropdown from enrichedAgents, Run Analysis button with pulse animation, results display (risk rating hero, summary, findings with severity color-coding, recommendations), Open Full Report button
+- src/renderer/lib/utils/threat-report.js — printable HTML threat report generation (extracted from ThreatAnalysis)
+- src/renderer/lib/components/ReportsTab.svelte — sub-toggle (Overview | Audit Log | Threat Analysis), composed: Reports or AuditLog or ThreatAnalysis
 
 ## Shared (src/shared/)
 - constants.js — sensitive rules, ignore patterns
