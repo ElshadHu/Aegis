@@ -15,5 +15,7 @@
 
 - Step 5: Agent cards (AgentCard.svelte, AgentPanel.svelte, ShieldTab.svelte wiring)
 
+- Step 6: Agent card expand tabs (AgentCard.svelte — expanded state, session duration, parent chain, file/network counts, Kill/Suspend/Resume action buttons, max-height collapse animation)
+
 ## Next
-- Step 6 (TBD)
+- Step 7 (TBD)
