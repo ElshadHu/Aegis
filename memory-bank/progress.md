@@ -27,5 +27,7 @@
 
 - Step 11: Network panel (NetworkPanel.svelte — network connections list with agent/domain/port/state/classification badge, filter by agent dropdown + classification pills (all/safe/unknown/flagged) with counts, sort by agent/domain/classification, 3-tier classification: safe=known domain, unknown=resolved but unrecognized, flagged=unresolvable IP; ActivityTab.svelte — Feed/Network toggle pills, shows FeedFilters+ActivityFeed or NetworkPanel)
 
+- Simplify pass: M3 token consistency + Svelte 5 rune cleanup across 4 files (Radar.svelte — replaced 8 hardcoded hex/rgba with M3 tokens via getComputedStyle + $effect replacing onMount/onDestroy; AgentCard.svelte — fixed $derived→$derived.by + corrected a11y ignore; Header.svelte — rgba border-colors→color-mix with M3 tokens; TabBar.svelte — hardcoded transition→M3 motion tokens + added {#each} key)
+
 ## Next
 - Step 12 (TBD)
