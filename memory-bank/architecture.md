@@ -15,13 +15,14 @@
 - exports.js — JSON/CSV/HTML export
 - tray-icon.js — system tray
 
-## Renderer (src/renderer/) — МИГРИРУЕМ НА SVELTE
-- Старые файлы: 20 JS + 1 HTML + 9 CSS (будут удалены после миграции)
-- Новые: Svelte компоненты + Vite build
+## Renderer (src/renderer/) — SVELTE 5 + VITE
+- Legacy vanilla JS renderer removed (Step 19): 20 JS + 1 HTML deleted
+- Legacy CSS removed (Step 19): 9 CSS files in src/styles/ deleted, directory removed
 - src/renderer/app.html — Vite entry point
 - src/renderer/main.js — Svelte mount
 - src/renderer/App.svelte — root component
 - src/renderer/lib/stores/ipc.js — IPC bridge as Svelte stores (agents, events, stats, network, anomalies, resourceUsage)
+- src/renderer/lib/styles/global.css — Global reset, body, scrollbar, selection, focus-visible, Google Fonts import
 - src/renderer/lib/styles/tokens.css — M3 design tokens (colors, typography, shape, motion)
 - src/renderer/lib/components/Header.svelte — fixed top bar: shield score, agents, files, uptime pills (M3 tokens)
 - src/renderer/lib/components/Footer.svelte — fixed bottom bar: CPU, memory, heap, scan interval (M3 tokens)
@@ -47,6 +48,8 @@
 - src/renderer/lib/components/ThreatAnalysis.svelte — AI threat analysis UI: session/agent radio toggle, agent dropdown from enrichedAgents, Run Analysis button with pulse animation, results display (risk rating hero, summary, findings with severity color-coding, recommendations), Open Full Report button
 - src/renderer/lib/utils/threat-report.js — printable HTML threat report generation (extracted from ThreatAnalysis)
 - src/renderer/lib/components/ReportsTab.svelte — sub-toggle (Overview | Audit Log | Threat Analysis), composed: Reports or AuditLog or ThreatAnalysis
+- src/renderer/lib/components/Settings.svelte — settings modal: scan interval slider, notifications toggle, API key input with show/hide, custom patterns textarea, loads/saves via IPC
+- src/renderer/lib/stores/theme.js — theme store (writable, 'dark'/'light') with localStorage persistence + toggleTheme()
 
 ## Shared (src/shared/)
 - constants.js — sensitive rules, ignore patterns
