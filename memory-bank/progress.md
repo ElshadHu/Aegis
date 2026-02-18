@@ -116,5 +116,9 @@
 
 - [x] Step 39: Full smoke test passed (10/10 checks). Fixed 4x hardcoded #fff → var(--md-sys-color-on-primary) in TabBar, ReportsTab, ActivityTab, RulesTab. Fixed sendToRenderer crash on disposed render frame during shutdown (main.js try-catch).
 
+- [x] Step 40: GitHub repo description + 8 topics set via `gh repo edit` (ai-security, ai-agents, monitoring, electron, open-source, privacy, cybersecurity, developer-tools). README.md verified clean — badge already Agents-95, clone URL already antropos17/Aegis, all "88" refs already fixed in Steps 34/38. No code changes needed.
+
+- [x] Step 41: Fixed stack description across all docs — Svelte 5, not vanilla JS. Created .gitattributes (linguist-language=Svelte). CLAUDE.md: Tech Stack → Svelte 5 + Vite, renderer section rewritten as component tree with stores/utils/styles, code conventions updated, project structure reflects actual 23 .svelte + 6 .js + 2 .css files. ARCHITECTURE.md: system diagram Intelligence Layer → ipc/risk/theme stores, App.svelte root, module dependency → Svelte component tree. CONTRIBUTING.md: CSS section → scoped styles + tokens.css. PR template: "vanilla JS main" → "CommonJS main". README.md already clean (no vanilla JS claims).
+
 ## Status
-Phase 6 in progress. 95 agents in database. All docs cleaned for public GitHub launch.
+Phase 6 in progress. 95 agents in database. All docs reflect Svelte 5 stack.
