@@ -41,5 +41,8 @@
 - Fixed radar white background on dark theme (transparent wrap background)
 - Fixed duplicate agent cards: grouped by name in AgentPanel, one card per agent with PID list + per-PID Kill/Suspend/Resume in expand body
 
+## UX Redesign Steps
+- Step 1: Shield tab bento grid layout (CSS grid: radar compact 380px + agents 320px right, timeline 32px strip, activity feed below with filters; App.svelte fixed viewport height; Radar max-height/max-width 380px; responsive stacking at 768px)
+
 ## Status
-All 20 steps complete. Svelte 5 migration done. Glassmorphism redesign applied.
+All 20 migration steps complete. UX redesign Step 1 done, Step 2 next.
