@@ -74,6 +74,7 @@
 
 - [x] Step 21: CODE_OF_CONDUCT.md created (Our Pledge, Standards, Enforcement, Attribution), .gitignore verified (dist/, out/, .env, node_modules/, *.log, .DS_Store all present)
 - [x] Step 22: GitHub issue templates + PR template (.github/ISSUE_TEMPLATE/bug_report.md, .github/ISSUE_TEMPLATE/feature_request.md, .github/pull_request_template.md)
+- [x] Step 23: GitHub Actions CI workflow (.github/workflows/ci.yml — build on windows-latest, lint on ubuntu-latest, Node 20, npm cache)
 
 ## Status
 Phase 6 in progress. 95 agents in database. README polished for public GitHub launch.
