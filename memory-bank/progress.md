@@ -73,6 +73,7 @@
 - [x] Step 5: Polish README for public launch (restructured sections: badges→pitch→monitors→features→quick start→data flow→agent database→roadmap→author; removed all Svelte/Vite references; removed startup pitch tone; verified CONTRIBUTING.md "Vanilla JS only" and SECURITY.md contact email)
 
 - [x] Step 21: CODE_OF_CONDUCT.md created (Our Pledge, Standards, Enforcement, Attribution), .gitignore verified (dist/, out/, .env, node_modules/, *.log, .DS_Store all present)
+- [x] Step 22: GitHub issue templates + PR template (.github/ISSUE_TEMPLATE/bug_report.md, .github/ISSUE_TEMPLATE/feature_request.md, .github/pull_request_template.md)
 
 ## Status
 Phase 6 in progress. 95 agents in database. README polished for public GitHub launch.
