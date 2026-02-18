@@ -59,5 +59,11 @@
 
 - Step 8: Tab transitions + micro-interactions (App.svelte: {#key activeTab} fade-in 200ms translateY(4px); AgentCard: grid-template-rows 0fr→1fr expand with .expand-inner wrapper; Settings: modal scale-in adds translateY(8px); global button:active scale(0.97); per-component :active on action-btn and .btn)
 
+- Step 9: Responsive min-width + electron window constraints (main.js: BrowserWindow 1200×800 default, 900×600 min; ShieldTab: 960px breakpoint stacks radar above agents single-column with 380px radar row + 200px agents cap; AgentPanel: min-width 280px; removed Reports 600px mobile breakpoint)
+
+- Simplify pass after Step 9: AgentCard.svelte 291→150 lines (compact CSS). All other files clean.
+
+- Step 10: Final simplify + screenshot + git tag (screenshot.png at 1200×800 showing Shield tab with radar + Claude Code agent; git tag v0.2.0-alpha)
+
 ## Status
-All 20 migration steps complete. UX redesign Step 8 done. Step 9 next.
+UX redesign complete. 10 steps. Ready for GitHub push.
