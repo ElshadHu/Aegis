@@ -53,5 +53,9 @@
 
 - Step 6: Reports tab stat cards + export + audit polish (stat cards: 24px DM Mono numbers, 9px uppercase labels, semantic colors for sensitive/shield; export buttons: compact 6px 14px pills with glass border; audit cards: grid layout matching reports style; consistent button styling across reports+audit)
 
+- Simplify pass after Step 6: removed dead uptimeMs/uptimeStr + unused stats import from Reports.svelte
+
+- Step 7: Radar compact sizing + dark canvas consistency (transparent bg — glass shows through; grid circles rgba(255,255,255,0.06), crosshairs 0.04; sweep arm desaturated slate 122,138,158; agent labels rgba(232,230,226,0.8); AEGIS center 0.4; agent dots grouped by name — one dot per agent with name-hash stable angle, highest riskScore wins)
+
 ## Status
-All 20 migration steps complete. UX redesign Step 6 done, Step 7 next.
+All 20 migration steps complete. UX redesign Step 7 done. Step 8 next.
