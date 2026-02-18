@@ -69,6 +69,7 @@
 - [x] Step 1: Git push to GitHub
 - [x] Step 2: README update for v0.2.0-alpha (badges, .env.example in Quick Start)
 - [x] Step 3: Settings modal completeness (added Export Config / Import Config buttons, IPC handlers in main.js + preload.js)
+- [x] Step 4: Container/VM Detection (7 new agents: Docker Desktop, WSL, Ollama, LM Studio, LocalAI, GPT4All, Jan; 2 new categories: container-runtime, local-llm; 88→95 agents; config paths + self-config + sensitive rules in constants.js)
 
 ## Status
-UX redesign complete. 10 steps. Pushed to GitHub (main branch + v0.2.0-alpha tag).
+Phase 6 in progress. 95 agents in database.
