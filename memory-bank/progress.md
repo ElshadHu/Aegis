@@ -114,5 +114,7 @@
   - package.json: added homepage, bugs, fixed author → "Ruslan Murtuzaliyev", updated keywords (oversight, agents, privacy), added .git to repo URL
   - .gitignore: added *.exe
 
+- [x] Step 39: Full smoke test passed (10/10 checks). Fixed 4x hardcoded #fff → var(--md-sys-color-on-primary) in TabBar, ReportsTab, ActivityTab, RulesTab. Fixed sendToRenderer crash on disposed render frame during shutdown (main.js try-catch).
+
 ## Status
 Phase 6 in progress. 95 agents in database. All docs cleaned for public GitHub launch.
