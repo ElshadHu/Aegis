@@ -49,5 +49,7 @@
 
 - Step 4: Activity tab compact feed + network rows (feed entries 28px tall: dot+time+agent+action+path+badge; severity badges DENIED/SENSITIVE/CONFIG/DELETED with translucent backgrounds; removed type icons; alternating row stripes; path truncated to last 2 segments; NetworkPanel rows compacted to match; 11px font)
 
+- Step 5: Rules tab visual polish (presets: filled active state with shadow, longer descriptions, 10px desc text; permissions: tighter 8px 12px padding; gradient separators between sections; agent DB: glass search input, prominent header row, row hover)
+
 ## Status
-All 20 migration steps complete. UX redesign Step 4 done, Step 5 next.
+All 20 migration steps complete. UX redesign Step 5 done, Step 6 next.
