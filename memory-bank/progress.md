@@ -45,5 +45,7 @@
 - Step 1: Shield tab bento grid layout (CSS grid: radar compact 380px + agents 320px right, timeline 32px strip, activity feed below with filters; App.svelte fixed viewport height; Radar max-height/max-width 380px; responsive stacking at 768px)
 - Step 2: Agent card compact redesign (single-row collapsed: name + PID + file/net counts + risk score + trust badge; risk bar + parent + session + PID list in expand body; reduced padding 8px 12px)
 
+- Step 3: Header compact + footer merge (header: removed pill containers, merged into inline text "82 · 2 agents · 8 files"; footer: added version left-aligned, moved uptime from header, shortened labels MEM/HEAP/SCAN/UP)
+
 ## Status
-All 20 migration steps complete. UX redesign Step 2 done, Step 3 next.
+All 20 migration steps complete. UX redesign Step 3 done, Step 4 next.
