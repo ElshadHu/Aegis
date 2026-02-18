@@ -34,5 +34,12 @@
   - Fixed production file loading (main.js — fallback from dev server to dist/)
   - Added missing --md-sys-color-error-container token (tokens.css, both themes)
 
+## Post-migration fixes
+- Risk scoring rebalance ported to Svelte (self-access exemption, 30s dedup, configContrib*0.5, netContrib cap 10, sshAwsContrib separate, diminishing returns for sensitive)
+- Removed legacy untracked files (root risk-scoring.js, src/index.html, src/renderer/dist/)
+- Glassmorphism CSS foundation (21 files: tokens.css rgba surfaces, glass tokens, body ambient gradients, backdrop-filter on all cards/panels/modals/toggles, glass borders + shadows, scrollbar refinement)
+- Fixed radar white background on dark theme (transparent wrap background)
+- Fixed duplicate agent cards: grouped by name in AgentPanel, one card per agent with PID list + per-PID Kill/Suspend/Resume in expand body
+
 ## Status
-All 20 steps complete. Svelte 5 migration done. Tagged v0.2.0-alpha.
+All 20 steps complete. Svelte 5 migration done. Glassmorphism redesign applied.
